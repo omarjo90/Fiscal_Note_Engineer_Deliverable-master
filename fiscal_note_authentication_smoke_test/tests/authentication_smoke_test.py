@@ -1,7 +1,7 @@
 import pytest, os
 from selenium.webdriver import Chrome
-from fIscal_note_authentication_smoke_test.pageObject.log_in_page import LogInPage
-from fIscal_note_authentication_smoke_test.pageObject.home_page import HomePage
+from fiscal_note_authentication_smoke_test.pageObject.log_in_page import LogInPage
+from fiscal_note_authentication_smoke_test.pageObject.home_page import HomePage
 
 
 chrome_driver = '/Users/omar.guzman/PycharmProjects/UDR_UI/features/chromedriver'

@@ -1,4 +1,4 @@
-from fIscal_note_authentication_smoke_test.pageObject.base_page import BasePage
+from fiscal_note_authentication_smoke_test.pageObject.base_page import BasePage
 from selenium.webdriver.common.by import By
 
 
