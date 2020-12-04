@@ -1,0 +1,5 @@
+.idea/
+fIscal_note_authentication_smoke_test/__pycache__/
+fIscal_note_authentication_smoke_test/pageObject/__pycache__/
+fIscal_note_authentication_smoke_test/tests/__pycache__/
+fIscal_note_authentication_smoke_test/pageObject/test_script.py
