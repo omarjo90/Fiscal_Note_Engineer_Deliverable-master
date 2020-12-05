@@ -23,10 +23,10 @@ The automation project uses the following python packages:
 ├── README.md
 ├── __init__.py
 ├── pageObject
-│   ├── __init__.py
-│   ├── base_page.py
-│   ├── home_page.py
-│   └── log_in_page.py
+│    ├── __init__.py
+│    ├── base_page.py
+│    ├── home_page.py
+|    └── log_in_page.py
 ├── requirements.txt
 └── tests
     ├── __init__.py
