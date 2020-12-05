@@ -43,5 +43,8 @@ class LogInPage(BasePage):
     def check_blank_username_and_password_error_message_displayed(self):
         return self.is_visible(self.USERNAME_BLANK_ERROR_MESSAGE) and self.is_visible(self.PASSWORD_BLANK_ERROR_MESSAGE)
 
+    def check_first_log_in_button_displayed(self):
+        return self.is_visible(self.LOG_IN_BUTTON)
+
 
 

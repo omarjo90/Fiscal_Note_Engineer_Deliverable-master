@@ -20,14 +20,19 @@ def browser():
 def test_log_in_with_valid_credentials(browser):
     log_in_page = LogInPage(browser)
     home_page = HomePage(browser)
+
     log_in_page.navigate()
     log_in_page.click_first_log_in_button()
     log_in_page.set_username(username)
     log_in_page.set_password(password)
     log_in_page.click_main_log_in_button()
+
     assert home_page.check_home_page_displayed()
-    # home_page.click_log_out_button()
-    # time.sleep(5)
+
+    home_page.click_log_out_button()
+
+    assert log_in_page.check_first_log_in_button_displayed()
+    assert browser.title == 'FiscalNote - Login'
 
 
 def test_error_message_with_invalid_credentials(browser):

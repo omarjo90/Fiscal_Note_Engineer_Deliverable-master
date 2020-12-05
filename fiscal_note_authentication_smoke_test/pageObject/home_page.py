@@ -7,7 +7,9 @@ import time
 class HomePage(BasePage):
     WELCOME_MESSAGE = (By.XPATH, '//h1')
     LOG_OUT_option = (By.XPATH, "//div[@class='sidebar-mini__inner']/div[@class='sidebar-footer']//span[contains(text(), 'Log out')]")
-    site_bar = (By.XPATH, "//div[@class='ember-view sidebar']")
+    SITE_BAR = (By.XPATH, "//div[@class='ember-view sidebar']")
+    ABSOLUTE_XPATH_LOG_OUT = (By.XPATH, "/html/body/div[1]/div[6]/div/div[1]/div/div[4]/div[2]/div[9]/div[1]/div[1]/a/span/i")
+    ABSOLUTE_XPATH_LOG_OUT_BUTTON = (By.XPATH, "/html/body/div[1]/div[6]/div/div[1]/div/div[4]/div[2]/div[9]/div[1]/div[3]/div[2]/a/span")
 
     def __init__(self, driver):
         self.driver = driver
@@ -17,9 +19,6 @@ class HomePage(BasePage):
         return 'Welcome, QA Engineer Deliverable' in self.driver.page_source
 
     def click_log_out_button(self):
-        self.click(self.site_bar)
-        time.sleep(5)
-        # self.click(self.LOG_OUT_option)
-
-
-
+        self.click(self.SITE_BAR)
+        self.click(self.ABSOLUTE_XPATH_LOG_OUT)
+        self.click(self.ABSOLUTE_XPATH_LOG_OUT_BUTTON)
