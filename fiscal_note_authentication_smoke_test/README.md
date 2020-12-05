@@ -19,7 +19,7 @@ The automation project uses the following python packages:
     - Selenium version 3.141.0
 
 ##### Project tree
-
+```bash
 ├── README.md
 ├── __init__.py
 ├── pageObject
@@ -31,7 +31,7 @@ The automation project uses the following python packages:
 └── tests
     ├── __init__.py
     └── authentication_smoke_test.py
-
+```
 
 #### How to execute automation project
 
