@@ -62,11 +62,14 @@ In order to execute the project, you need to have python 3.7 installed in your m
 
 6. At the end of the execution, the expected output should be something similar to this:
 
+```bash
 ========== test session starts ==========
 platform darwin -- Python 3.7.6, pytest-6.1.2, py-1.9.0, pluggy-0.13.1 -- /Users/omar.guzman/PycharmProjects/Fiscal_Note_Engineer_Deliverable-master/fiscal_note_authentication_smoke_test/venv/bin/python
 cachedir: .pytest_cache
 rootdir: /Users/omar.guzman/PycharmProjects/Fiscal_Note_Engineer_Deliverable-master/fiscal_note_authentication_smoke_test
 collected 5 items
+
+
 tests/authentication_smoke_test.py::test_log_in_with_valid_credentials PASSED                                                                                           [ 20%]
 tests/authentication_smoke_test.py::test_error_message_with_invalid_credentials PASSED                                                                                  [ 40%]
 tests/authentication_smoke_test.py::test_password_field_blank_error_message PASSED                                                                                      [ 60%]
@@ -74,6 +77,6 @@ tests/authentication_smoke_test.py::test_username_field_blank_error_message PASS
 tests/authentication_smoke_test.py::test_username_and_password_field_blank_error_message PASSED                                                                         [100%]
 
 ======= 5 passed in 70.48s (0:01:10) =======
-
+```
 
 
