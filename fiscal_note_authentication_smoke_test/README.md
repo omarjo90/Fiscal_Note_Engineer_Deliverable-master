@@ -47,6 +47,7 @@ In order to execute the project, you need to have python 3.7 installed in your m
 
         export FISCALNOTEUSERNAME="USERNAME"
         export FISCALNOTEPASSWORD="PASSWORD"
+        export chrome_driver="path/where/chromedriver/lives"
 
 3. Source the .bash_profile in home directory
 

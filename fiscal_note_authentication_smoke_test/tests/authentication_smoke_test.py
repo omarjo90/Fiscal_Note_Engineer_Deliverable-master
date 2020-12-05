@@ -4,7 +4,7 @@ from fiscal_note_authentication_smoke_test.pageObject.log_in_page import LogInPa
 from fiscal_note_authentication_smoke_test.pageObject.home_page import HomePage
 
 
-chrome_driver = '/Users/omar.guzman/PycharmProjects/UDR_UI/features/chromedriver'
+chrome_driver = os.environ['chrome_driver']
 username = os.environ['FISCALNOTEUSERNAME']
 password = os.environ['FISCALNOTEPASSWORD']
 
