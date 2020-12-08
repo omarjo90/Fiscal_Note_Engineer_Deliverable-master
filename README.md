@@ -42,6 +42,7 @@ In order to execute the project, you need to have python 3.7 installed in your m
 1. Create a virtual enviroment to install and isolate the test environment as follows:
 
         virtualenv --python=/usr/local/bin/python3.7 venv
+        source ./venv/bin/activate
 
 2. Set enviroment variables in .bash_profile file, the values for these are provided for FIscal Note QA team.
 
